@@ -4,7 +4,7 @@
 
 class Timer final {
 
-  Timer(Timer &&other) = default;
+  Timer(Timer &&other) noexcept = default;
   Timer(const Timer &other) = delete;
   Timer &operator=(const Timer &other) = delete;
 

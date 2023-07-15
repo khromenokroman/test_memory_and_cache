@@ -5,7 +5,7 @@
 #include <cstdlib>
 
 class Matrix final {
-  Matrix(Matrix &&other) = default;
+  Matrix(Matrix &&other) noexcept = default;
   Matrix(const Matrix &other) = delete;
   Matrix &operator=(const Matrix &other) = delete;
 
